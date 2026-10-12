@@ -1,0 +1,80 @@
+# ============================================================
+# 小猪记账 —— Git 忽略规则
+# ============================================================
+
+# ---------- 数据库（含个人记账数据，绝对不能上传）----------
+piggy.db
+piggy.db-journal
+piggy.db-wal
+piggy.db-shm
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# ---------- 导出的数据 ----------
+*.csv
+导出*/
+
+# ---------- PyInstaller 打包产物 ----------
+build/
+dist/
+*.spec
+# 注：如需在 Release 发布 exe，请用 GitHub Releases 挂载，
+#     不要把 dist/ 提交进仓库。
+
+# ---------- Python 缓存 ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ---------- 虚拟环境 ----------
+venv/
+.venv/
+env/
+ENV/
+.venv-*/
+venv-*/
+
+# ---------- 测试与覆盖率 ----------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ---------- 编辑器 / IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.orig
+
+# ---------- 操作系统 ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ---------- 日志 ----------
+*.log
+
+# ---------- 工具目录（本机工作区记录，非项目内容）----------
+# 如希望把项目笔记一起开源，删掉下面这行即可
+.workbuddy/
+
+# ---------- 本机专用启动脚本（路径写死，别人跑不了）----------
+# 如希望保留，删掉下面这行即可
+启动小猪记账.bat

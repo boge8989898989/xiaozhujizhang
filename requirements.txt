@@ -1,0 +1,21 @@
+# 小猪记账 —— 依赖说明
+#
+# 本项目的运行时依赖为「零第三方库」，全部使用 Python 标准库：
+#   - tkinter / ttk   :: GUI 与表格控件
+#   - sqlite3         :: 内置数据库
+#   - csv             :: CSV 导出
+#   - datetime / math / os / sys / tkinter.filedialog :: 其它工具
+#
+# 因此运行程序无需 pip install 任何包：
+#   python main.py
+#
+# ---------------------------------------------------------------
+# 仅「打包为单文件 exe」时需要安装 pyinstaller（非运行时依赖）。
+# 取消下面这行的注释并按需安装即可：
+# pyinstaller>=6.0
+#
+# 打包命令：
+#   pip install pyinstaller
+#   pyinstaller --noconfirm --onefile --windowed --name 小猪记账 \
+#       --hidden-import sqlite3 main.py
+# ---------------------------------------------------------------
