@@ -97,3 +97,7 @@ pyinstaller --noconfirm --onefile --windowed --name 小猪记账 ^
 
 - 金额以 `REAL` 存储，显示统一经 `theme.fmt_money()` 格式化为两位小数并加 `¥`。
 - 全程去除 tkinter/ttk 默认灰色系统外观，控件均自绘。
+
+## 📄 License
+
+[MIT](LICENSE) © 2026 boge
